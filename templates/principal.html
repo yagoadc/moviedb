@@ -1,0 +1,25 @@
+<button type="button" class="btn btn-primary">Primary</button>
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Diretor</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat = "filme in Filmes">
+                <td>{{filme.ID}}</td>
+                <td>{{filme.Nome}}</td>
+                <td>{{filme.Diretor}}</td>
+                <td>{{filme.Tipo}}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </tfoot>
+    </table>
